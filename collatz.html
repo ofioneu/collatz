@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script type="text/javascript" src = "teste-callback.js"></script>
+<link rel="stylesheet" href="collatz.css">
+    <title>Collatz</title>
+</head>
+<body>
+    <div id="explicacao">
+        <h1>Conjectura de Collatz</h1>
+        <p>
+            A Conjectura de Collatz, é uma conjectura com base na qual qualquer número natural diferente de zero é dividido por 2 caso seja par e multiplicado por 3 e somado a 1 caso seja impar e na qual após um número de operações, chega ao loop 1, caracterizado pela repetição (1, 4, 2, 1...).
+            
+            Se par/2 se (impar*3)+1
+        </p>
+    </div>
+
+    <figure class="highcharts-figure">
+        <div id="container"></div>
+        
+    </figure>
+
+    <div class="input-group">
+        <input id="entrada" class="form-control form-control-lg" type="text" placeholder="Digite o numero aqui">
+        <button id="processar" type="button" class="btn btn-primary">Processar</button>
+    </div>
+    
+    <div id="caixa">
+        <span>Numeros:</span>
+    </div>
+    <div id="num_vet"></div>
+
+    
+</body>
+</html>
